@@ -23,17 +23,17 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 <PageLayout meta={{ title: 'Home' }} highlightColor='#659EB9'>
   <main class='flex w-full flex-col items-center'>
-    /* <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
+    <!-- <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
       <Image
         src={avatar}
         alt='profile'
         class='h-28 w-auto rounded-full border p-1'
         loading='eager'
       />
-      */
+    -->
 
       <div class='flex flex-col items-center gap-y-4'>
-        <h1 class='text-3xl font-bold'>{config.author}</h1>
+        <h1 class='text-3xl font-bold'>Diego Rodas</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
           <Label title='El Salvador'>
             <Icon name='location' class='size-5' slot='icon' />
@@ -61,19 +61,19 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           ></span>
           <span class='size-2 rounded-full bg-green-400'></span>
         </span>
-        <p class='font-medium text-muted-foreground'>Get Template</p>
+        <p class='font-medium text-muted-foreground'>Disponible</p>
       </a>
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='Acerca de'>
-        <p class='text-muted-foreground'>Especialista en Soporte Técnico TI / Administración de Sistemas / Desarrollador Jr.</p>
+        <p class='text-muted-foreground'>Desarrollador Jr.</p>
         <p class='text-muted-foreground'>
           Desarrollo de aplicaciones web con PHP con el Framework Laravel, HTML5, CSS3, JavaScript y Framework CSS modernos como Bootstrap y Tailwind CSS.
         </p>
         <Button title='Más acerca de mí' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
-      /* {
+      <!-- {
         allPostsByDate.length > 0 && (
           <Section title='Posts'>
             <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
@@ -87,7 +87,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           </Section>
         )
       }
-      */
+      -->
       {
         /* <Section title='Experience'>
       <Card
