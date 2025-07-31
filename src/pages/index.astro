@@ -23,14 +23,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 <PageLayout meta={{ title: 'Home' }} highlightColor='#659EB9'>
   <main class='flex w-full flex-col items-center'>
-    <!-- <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
+    <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
       <Image
         src={avatar}
         alt='profile'
         class='h-28 w-auto rounded-full border p-1'
         loading='eager'
       />
-    -->
+    
 
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>Diego Rodas</h1>
@@ -67,9 +67,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='Acerca de'>
-        <p class='text-muted-foreground'>Desarrollador Jr.</p>
+        <p class='text-muted-foreground'>Desarrollador</p>
         <p class='text-muted-foreground'>
-          Desarrollo de aplicaciones web con PHP con el Framework Laravel, HTML5, CSS3, JavaScript y Framework CSS modernos como Bootstrap y Tailwind CSS.
+          Creación de aplicaciones web con PHP con el Framework Laravel, HTML5, CSS3, JavaScript y Frameworks CSS modernos como Bootstrap y Tailwind CSS.
         </p>
         <Button title='Más acerca de mí' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
@@ -117,13 +117,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       />
     </Section> */
       }
-      <Section title='Education'>
+      <!-- <Section title='Educación'>
         <Card
           as='a'
-          heading='Lorem ipsum'
-          subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei.'
-          date='August 2021 - July 2025'
-          href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+          heading='Universidad Dr. Andrés Bello.'
+          subheading='Licenciatura en Computación.'
+          date='2015 - 2019.'
+          href='#'
         >
           {
             /* <ul class='ms-4 list-disc text-muted-foreground'>
@@ -136,8 +136,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           }
         </Card>
       </Section>
-
-      <Section title='Website List'>
+      -->
+      <!-- <Section title='Website List'>
         <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
           <ProjectCard
             href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
@@ -165,21 +165,67 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           />
         </div>
       </Section>
+      -->
 
-      <Section title='Certifications'>
+      <!-- <Section title='Cursos'>
         <Card
           as='a'
-          heading='Lorem ipsum'
-          subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio possit voluptatum. Dicat ceteros cu vim. Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.'
+          heading='Administración de sistemas tipo Unix y Linux: Debian, Ubuntu, Oracle Linux, AIX (IBM) y Solaris (Oracle).'
+          subheading='Subheading'
           date='July 2024'
-          href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+          href='#'
+        />
+        <Card
+          as='a'
+          heading='Introduction to Google Workspace Administration.'
+          date='July 2024'
+          href='https://www.cloudskillsboost.google/public_profiles/bd587103-6c4c-41bf-b72e-bc9b4e65f3fe/badges/8420630'
+        />
+        <Card
+          as='a'
+          heading='Managing Google Workspace.'
+          date='July 2024'
+          href='https://www.cloudskillsboost.google/public_profiles/bd587103-6c4c-41bf-b72e-bc9b4e65f3fe/badges/8428414'
+        />
+        <Card
+          as='a'
+          heading='Configure your Microsoft 365 Experience.'
+          date='July 2024'
+          href='https://learn.microsoft.com/api/achievements/share/en-us/DiegoRodas-8799/AEYTXRJ7?sharingId=613577AD5FC91AA6'
+        />
+        <Card
+          as='a'
+          heading='- Administración de Microsoft 365.'
+          date='July 2024'
+          href='https://www.cloudskillsboost.google/public_profiles/bd587103-6c4c-41bf-b72e-bc9b4e65f3fe/badges/8420630'
+        />
+        <Card
+          as='a'
+          heading='Administración de Windows Server y Linux.'
+          date='July 2024'
+          href='https://drive.google.com/file/d/1Gr20JVr7uuFbK8A01_pNWG6u8mZ_XX4B/view?usp=sharing'
+        />
+        <Card
+          as='a'
+          heading='CCNA1 (CCNAv7: Introduction to Networks).'
+          date='July 2024'
+          href='https://www.credly.com/badges/0836fb4f-5727-41b8-a691-057bb3fa54ca/public_url'
+        />
+        <Card
+          as='a'
+          heading='CCNA2 (Fundamentals of Switching, Routing and Wireless Networks).'
+          date='July 2024'
+          href='https://www.credly.com/badges/d62cc462-6ad4-45e6-af70-494f8a4ea623/public_url'
         />
       </Section>
-
-      <Section title='Skills'>
-        <SkillLayout title='Languages' skills={languages} />
-        <SkillLayout title='Frontend' skills={frontend} />
-        <SkillLayout title='Backend' skills={backend} />
+      -->
+      <Section title='Habilidades'>
+        <!-- <SkillLayout title='Administración de sistemas' skills={servers} /> -->
+        <SkillLayout title='Desarrollo' skills={development} />
+        <SkillLayout title='Bases de datos' skills={databases} />
+        <!-- <SkillLayout title='Herramientas colaborativas' skills={cloud} /> -->
+        <!-- <SkillLayout title='Soporte técnico' skills={support} /> -->
+        <!-- <SkillLayout title='Redes comunicaciones' skills={network} /> -->
       </Section>
     </div>
     <Quote class='mt-12' />
