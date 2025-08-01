@@ -12,17 +12,18 @@ import wechat from '@/assets/wechat-qrcode.jpg'
 import config from '@/site-config'
 
 const headings = [
-  { depth: 2, slug: 'theme', text: 'Theme' },
-  { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
-  { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
+  { depth: 2, slug: 'veterinary_app', text: '1. Veterinary App' },
+  { depth: 3, slug: 'veterinary_app_key_features', text: 'Key features' },
+  { depth: 3, slug: 'developed_by', text: 'Developed by' },
+  // { depth: 2, slug: 'others', text: 'Others' },
+  // { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
+  // { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
 ]
 ---
 
-<PageLayout title='Projects' {headings} info={{ slug: '/projects', hideComment: true }}>
-  <p>Github Activities:</p>
+<PageLayout title='Projects' {headings} > <!-- info={{ slug: '/projects', hideComment: true }} -->
+  <p>A sample of my most recent projects. Explore my work to see how I apply my web development skills to create functional and attractive solutions.</p>
+  <!-- <p>Github Activities:</p>
   <p>
     <Image
       src='https://ghchart.rshah.org/659eb9/cworld1'
@@ -38,8 +39,8 @@ const headings = [
   <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
     <Icon class='size-5' name='receive-money' slot='before' />
   </Button>
-
-  <h2 id='theme'>Theme</h2>
+  -->
+  <!-- <h2 id='theme'>Theme</h2>
   <ProjectSection
     projects={[
       {
@@ -56,8 +57,8 @@ const headings = [
       }
     ]}
   />
-
-  <h2 id='programs'>Programs</h2>
+  -->
+  <!-- <h2 id='programs'>Programs</h2>
   <ProjectSection
     projects={[
       {
@@ -83,7 +84,9 @@ const headings = [
       }
     ]}
   />
-  <Collapse title='Some old projects'>
+  -->
+
+  <!-- <Collapse title='Some old projects'>
     <ProjectSection
       projects={[
         {
@@ -102,8 +105,9 @@ const headings = [
       ]}
     />
   </Collapse>
+  -->
 
-  <h2 id='learnings'>Learnings</h2>
+  <!-- <h2 id='learnings'>Learnings</h2>
   <ProjectSection
     class='my-2'
     projects={[
@@ -124,8 +128,9 @@ const headings = [
       }
     ]}
   />
+  -->
 
-  <h2 id='others'>Others</h2>
+  <!-- <h2 id='others'>Others</h2>
   <ProjectSection
     projects={[
       {
@@ -140,19 +145,101 @@ const headings = [
       }
     ]}
   />
+  -->
 
   <!-- gpg signature -->
-  <h2 id='gpg-signature'>GPG Signature</h2>
+  <h2 id='veterinary_app'>1. Veterinary App</h2>
   <p>
-    You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
-    is <code>114514</code>, and you can find it on the opengpg key servers or download from it.
+    Web application for managing a veterinary clinic, developed with Laravel 11.
   </p>
-  <Button href='https://keys.openpgp.org/search?q=114514' title='Checkout my key' target='_blank'>
+  <p>
+    It includes features such as role and permission management, users, pet species, positions, vaccinations, clients, pets, veterinarians, consultations, appointments, event calendar, inventory, and sales module. Ideal for automating and centralizing the operations of a veterinary clinic. 
+    <!-- <code>114514</code> -->
+  </p>
+  <!-- <Button href='https://keys.openpgp.org/search?q=114514' title='Checkout my key' target='_blank'>
     <KeyIcon class='size-5' slot='before' />
-  </Button>
+  </Button> -->
+  <p>
+    <img src="/src/assets/imgVeterinaryApp.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppDark.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppClients.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppClientsDark.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppPets.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppPetsDark.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppProducts.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppProductsDark.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppMovements.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppMovementsDark.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppSales.png" alt="">
+  </p>
+  <p>
+    <img src="/src/assets/imgVeterinaryAppSalesDark.png" alt="">
+  </p>
 
+  <h3 id='veterinary_app_key_features'>Key features</h3>
+  <ul>
+    <li>
+      <span class="subtitle">Dashboard:</span> key system statistics (clients, pets, consultations, appointments, etc.) with dynamic graphs.
+    </li>
+    <li>
+      <span class="subtitle">Role and permission system:</span> detailed access control for different types of users.
+    </li>
+    <li>
+      <span class="subtitle">User management:</span> system account administration.
+    </li>
+    <li>
+      <span class="subtitle">Positions:</span> definition of internal roles such as veterinarians, assistants, administrators, etc.
+    </li>
+    <li>
+      <span class="subtitle">Veterinarians:</span> registration and control of medical staff.
+    </li>
+    <li>
+      <span class="subtitle">Species:</span> classification of pets by species (dogs, cats, rabbits, etc.).
+    </li>
+    <li>
+      <span class="subtitle">Vaccines:</span> registration and administration of vaccines available for pets, including general information and individual follow-up.
+    </li>
+    <li>
+      <span class="subtitle">Clients:</span> administration of pet owners.
+    </li>
+    <li>
+      <span class="subtitle">Pets:</span> medical and general information for each pet.
+    </li>
+    <li>
+      <span class="subtitle">Veterinary consultations:</span> medical history, symptoms, diagnoses, and treatments.
+    </li>
+    <li>
+      <span class="subtitle">Events and calendar:</span> scheduled veterinary appointments with a calendar view.
+    </li>
+    <li>
+      <span class="subtitle">Complete inventory:</span> product categories, warehouses, stock and movements, suppliers.
+    </li>
+    <li>
+      <span class="subtitle">Sales:</span> registration and management of invoices for each product sold to a customer.
+    </li>
+  </ul>
   <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
+  <!-- <h2 id='sponsorship'>Sponsorship</h2>
   <p>Please leave a message or contact me proactively after sponsorship.</p>
   <Sponsorship
     methods={[
@@ -169,6 +256,11 @@ const headings = [
       { name: 'Anonymous', amount: '20.00', date: '2022-04-06' }
     ]}
   />
+  -->
+  <h3 id='developed_by'>Developed by</h3>
+  <p class="flex items-center">
+    <a href="https://github.com/d-rodas" target="_blank">@d-rodas.</a>
+  </p>
 </PageLayout>
 
 <script
@@ -189,6 +281,10 @@ const headings = [
 </script>
 
 <style>
+  span.subtitle {
+    font-weight: 700;
+  }
+
   .sponsorship-card {
     & .sponsorship-card-img {
       opacity: 0.3;

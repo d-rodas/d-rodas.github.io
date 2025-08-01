@@ -13,8 +13,8 @@ import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
 const servers = ['Windows Server', 'Debian', 'Ubuntu', 'AIX', 'Solaris']
-const development = ['PHP (Laravel)', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Tailwind CSS', 'Google Apps Script', 'C# (.NET)']
-const databases = ['MySQL', 'SQL Server', 'Oracle']
+const development = ['PHP (Laravel)', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Tailwind CSS', 'Livewire', 'Google Apps Script']
+const databases = ['MySQL', 'SQL Server']
 const cloud = ['Google Workspace', 'Microsoft 365', 'Git', 'GitHub']
 const support = ['Hardware', 'Software', 'Acceso remoto (AnyDesk, TeamViewer, RDP)']
 const network = ['Adminsitración y configuración básica de Switches CISCO']
@@ -41,7 +41,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           <Label title='El Salvador'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
-          <Label
+          <!-- <Label
             title='Proyectos'
             as='a'
             href='https://github.com/cworld1/astro-theme-pure'
@@ -49,6 +49,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           >
             <Icon name='github' class='size-5' slot='icon' />
           </Label>
+          -->
         </div>
       </div>
 
@@ -64,17 +65,17 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           ></span>
           <span class='size-2 rounded-full bg-green-400'></span>
         </span>
-        <p class='font-medium text-muted-foreground'>Disponible</p>
+        <p class='font-medium text-muted-foreground'>Available</p>
       </a>
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='Acerca de'>
-        <p class='text-muted-foreground'>Desarrollador</p>
+      <Section title='About'>
+        <p class='text-muted-foreground'>Developer</p>
         <p class='text-muted-foreground'>
-          Creación de aplicaciones web con PHP con el Framework Laravel, HTML5, CSS3, JavaScript y Frameworks CSS modernos como Bootstrap y Tailwind CSS.
+          I am a web developer specializing in creating robust applications with PHP and the Laravel framework. I am proficient in technologies such as HTML5, CSS3, and JavaScript, and I use modern frameworks such as Bootstrap, Tailwind CSS, and Livewire to build dynamic and efficient interfaces.
         </p>
-        <Button title='Más acerca de mí' class='w-fit self-end' href='/about' style='ahead' />
+        <!-- <Button title='Más acerca de mí' class='w-fit self-end' href='/about' style='ahead' /> -->
       </Section>
       <!-- {
         allPostsByDate.length > 0 && (
@@ -222,10 +223,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         />
       </Section>
       -->
-      <Section title='Habilidades'>
+      <Section title='Skills'>
         <!-- <SkillLayout title='Administración de sistemas' skills={servers} /> -->
-        <SkillLayout title='Desarrollo' skills={development} />
-        <SkillLayout title='Bases de datos' skills={databases} />
+        <SkillLayout title='Development' skills={development} />
+        <SkillLayout title='Databases' skills={databases} />
         <!-- <SkillLayout title='Herramientas colaborativas' skills={cloud} /> -->
         <!-- <SkillLayout title='Soporte técnico' skills={support} /> -->
         <!-- <SkillLayout title='Redes comunicaciones' skills={network} /> -->

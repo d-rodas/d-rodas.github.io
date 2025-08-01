@@ -47,11 +47,11 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
-      { title: 'Projects', link: '/projects' },
-      { title: 'Links', link: '/links' },
-      { title: 'About', link: '/about' }
+      // { title: 'Blog', link: '/blog' },
+      // { title: 'Docs', link: '/docs' },
+      { title: 'Projects', link: '/projects' }
+      // { title: 'Links', link: '/links' },
+      // { title: 'About', link: '/about' }
     ]
   },
 
@@ -82,7 +82,7 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    /** social: { github: 'https://github.com/cworld1/astro-theme-pure' }*/
   },
 
   content: {
