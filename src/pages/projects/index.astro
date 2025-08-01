@@ -11,6 +11,8 @@ import KeyIcon from '@/assets/icons/key.svg'
 import wechat from '@/assets/wechat-qrcode.jpg'
 import config from '@/site-config'
 
+import imgVeterinaryApp from '../assets/imgVeterinaryApp.png';
+
 const headings = [
   { depth: 2, slug: 'veterinary_app', text: '1. Veterinary App' },
   { depth: 3, slug: 'veterinary_app_key_features', text: 'Key features' },
@@ -160,7 +162,7 @@ const headings = [
     <KeyIcon class='size-5' slot='before' />
   </Button> -->
   <p>
-    <img src="/src/assets/imgVeterinaryApp.png" alt="">
+    <img src={imgVeterinaryApp} alt="">
   </p>
   <p>
     <img src="/src/assets/imgVeterinaryAppDark.png" alt="">
