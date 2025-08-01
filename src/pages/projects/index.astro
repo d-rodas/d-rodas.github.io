@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import imgVeterinaryApp from '../assets/imgVeterinaryApp.png';
 
 import { Button, Collapse, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
@@ -160,7 +161,12 @@ const headings = [
     <KeyIcon class='size-5' slot='before' />
   </Button> -->
   <p>
-    <img src="../assets/imgVeterinaryApp.png" alt="">
+    <Image
+      src={imgVeterinaryApp}
+      alt='github activities'
+      inferSize
+      loading='lazy'
+    />
   </p>
   <p>
     <img src="/src/assets/imgVeterinaryAppDark.png" alt="">
