@@ -21,7 +21,7 @@ const { title, headings, info, ...props } = Astro.props
 <PageLayout meta={{ title }} {...props}>
   {headings?.length && <TOC headings={headings} slot='sidebar' />}
 
-  <!-- <Fragment slot='header'>
+  <Fragment slot='header'>
     <h1 class='text-2xl font-medium sm:mb-2 sm:text-3xl'>
       {title}
     </h1>
@@ -34,7 +34,7 @@ const { title, headings, info, ...props } = Astro.props
         />
       )
     }
-  </Fragment> -->
+  </Fragment>
 
   <slot />
 
