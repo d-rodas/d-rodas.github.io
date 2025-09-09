@@ -13,7 +13,7 @@ import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
 const servers = ['Windows Server', 'Debian', 'Ubuntu', 'AIX', 'Solaris']
-const development = ['PHP (Laravel)', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Tailwind CSS', 'Livewire', 'Google Apps Script', 'Git', 'GitHub', 'Vue']
+const development = ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Laravel', 'Bootstrap', 'Tailwind CSS', 'Livewire', 'Vue.js 'Google Apps Script', 'Git', 'GitHub']
 const databases = ['MySQL', 'SQL Server']
 const cloud = ['Google Workspace', 'Microsoft 365', 'Git', 'GitHub']
 const support = ['Hardware', 'Software', 'Acceso remoto (AnyDesk, TeamViewer, RDP)']
@@ -71,10 +71,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='About'>
+      <Section title='Acerca de'>
         <!-- <p class='text-muted-foreground'>Developer</p> -->
         <p class='text-muted-foreground'>
-          I am a web developer specializing in creating robust applications with PHP and the Laravel framework. I am proficient in technologies such as HTML5, CSS3, and JavaScript, and I use modern frameworks such as Bootstrap, Tailwind CSS, and Livewire to build dynamic and efficient interfaces.
+          Soy un desarrollador web especializado en la creación de aplicaciones robustas con PHP y el framework Laravel. Domino tecnologías como HTML5, CSS3, JavaScript y utilizo frameworks modernos como Bootstrap, Tailwind CSS, Livewire y Vue.js para crear interfaces dinámicas y eficientes.
         </p>
         <!-- <Button title='Más acerca de mí' class='w-fit self-end' href='/about' style='ahead' /> -->
       </Section>
@@ -224,10 +224,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         />
       </Section>
       -->
-      <Section title='Skills'>
+      <Section title='Habilidades'>
         <!-- <SkillLayout title='Administración de sistemas' skills={servers} /> -->
-        <SkillLayout title='Development' skills={development} />
-        <SkillLayout title='Databases' skills={databases} />
+        <SkillLayout title='Desarrollo' skills={development} />
+        <SkillLayout title='Bases de datos' skills={databases} />
         <!-- <SkillLayout title='Herramientas colaborativas' skills={cloud} /> -->
         <!-- <SkillLayout title='Soporte técnico' skills={support} /> -->
         <!-- <SkillLayout title='Redes comunicaciones' skills={network} /> -->
